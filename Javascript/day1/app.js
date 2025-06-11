@@ -57,15 +57,21 @@
 
 // lexical scope in js -->
 
-// let age = 10;
+let age = 10;
 
-// const printAge = () => {
-//     age = age + 1;
-//     console.log("Age:", age);
-// };
+const printAge = () => {
+    age = age + 1;
+    console.log("Age:", age);
+};
 
-// printAge();
+printAge();
 
-// printAge();
+printAge();
 
-// printAge();
+printAge();
+
+age = 30;
+
+printAge();
+
+printAge();
