@@ -9,15 +9,20 @@
 // console.log(window);
 
 // console.log(document);
-callback();
 
-let callback = function () {
-    console.info("---------");
+let callback1 = function () {
+    console.info("---- timeout -----");
     console.info("--->", "Likhilesh");
+    console.info("---------");
+};
+
+let callback2 = function () {
+    console.info("---- interval -----");
+    console.info("--->", "Himanshu");
     console.info("---------");
 };
 
 const timeInMilliseconds = 5000;
 
-// setTimeout(callback, timeInMilliseconds);
-// setInterval(callback, 2000);
+setTimeout(callback1, timeInMilliseconds);
+setInterval(callback2, 10000);
