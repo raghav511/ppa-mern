@@ -75,3 +75,5 @@ age = 30;
 printAge();
 
 printAge();
+
+console.log("END");
