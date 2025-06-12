@@ -1,26 +1,41 @@
-// console.log(town) // Uncaught ReferenceError: Cannot access 'town' before initialization
-// because after memory creation phase, the variable is not initialized, 
-// it is set to <value unavailable>, i.e, defined but not initialized
+var city = "panjim";
+var state = "goa";
+var country = "india";
 
-// till here city is undefined
+function showData() {
+    console.log("City:", city);
+    console.log("State:", state);
+    console.log("Country:", country);
+}
 
-let town = "Bengaluru";
+showData(); // even though the variables are not defined in the function,
+// they are accessible because of the lexical scope, 
+// i.e, the function is able to access the variables from the parent scope
 
-let city = "Delhi";
-// now city is Delhi
+// ---------------------------------------
 
-console.log(city);
+function showCity() {
+   if (true) {
+    var city1 = "Delhi";
+    let state1 = "Delhi";
+    const country1 = "India";
+}
+console.log("City:", city1); 
+console.log("State:", state1);
+console.log("Country:", country1);
+}
 
-// for var, the default value is undefined
-console.log(country) // this does not throw an error, because country is undefined
 
-// for let, the default value is not defined
-console.log(country) // this throws an error, because country is not defined
-// (it is not accessible before initialization)
 
-// we can call if before initialization, and redeclaration is allowed,
-// so var is not a good practice
-var country = "India";
+
+
+
+console.log("City:", city1);
+console.log("State:", state1);
+console.log("Country:", country1);
+
+
+showCity();
 
 
 
@@ -88,15 +103,15 @@ var country = "India";
 let age = 10;
 
 const printAge = () => {
-    age = age + 1;
+    age = age + 1; // the function rememebers the value of the parent variable
     console.log("Age:", age);
 };
 
-printAge();
+printAge(); // 11
 
-printAge();
+printAge(); // 12
 
-printAge();
+printAge(); // 13
 
 age = 30;
 
