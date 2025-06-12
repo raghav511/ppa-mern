@@ -1,3 +1,31 @@
+// console.log(town) // Uncaught ReferenceError: Cannot access 'town' before initialization
+// because after memory creation phase, the variable is not initialized, 
+// it is set to <value unavailable>, i.e, defined but not initialized
+
+// till here city is undefined
+
+let town = "Bengaluru";
+
+let city = "Delhi";
+// now city is Delhi
+
+console.log(city);
+
+// for var, the default value is undefined
+console.log(country) // this does not throw an error, because country is undefined
+
+// for let, the default value is not defined
+console.log(country) // this throws an error, because country is not defined
+// (it is not accessible before initialization)
+
+// we can call if before initialization, and redeclaration is allowed,
+// so var is not a good practice
+var country = "India";
+
+
+
+
+
 // var city = "Delhi";
 // let country = "India";
 // const continent = "Asia";
