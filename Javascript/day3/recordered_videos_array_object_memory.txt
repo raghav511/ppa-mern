@@ -1,0 +1,11 @@
+‼️Hello all,
+As discussed earlier, the knowledge of Object, Array and memory allocation will be required before going to advance topics of DOM & Promises.
+In todays class, instead of repeating same thing, I will share the in-depth videos on these topics and we will have live session tomorrow to cover DOM.
+* Objects
+	https://drive.google.com/file/d/1IjuMQ982Wlf2RBc7z60IDX92GKVU16OW/view?usp=sharing
+* Arrays
+	https://drive.google.com/file/d/1UorArTpktuLq654BfP8pdrZCSkitL80G/view?usp=sharing
+* Memory Allocation Part 1
+	⁠https://drive.google.com/file/d/1kPQ7J0nFAU_TLZRo_m0P5XFhf-H_qehL/view?usp=sharing
+* Memory Allocation Part 2
+	https://drive.google.com/file/d/1tvW1WNjGoUJbr1tj8xD4qooM8cCZVMOe/view?usp=sharing
