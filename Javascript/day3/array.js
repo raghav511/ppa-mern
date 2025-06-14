@@ -87,3 +87,116 @@ console.log("new veg list is", vegetables)
 
 vegetables.splice(0,0, 'cabbage','tomato')
 console.log("veg list", vegetables)
+
+//  practise from w3
+
+const fruitsW3 = ["Banana", "Orange", "Apple", "Mango"];
+console.log("before toString", fruitsW3)
+let myList = fruitsW3.toString(); 
+console.log(myList) // Banana,Orange,Apple,Mango
+
+console.log("before toString", pet1)
+let myPet = pet1.toString();
+console.log("after toString", myPet)
+
+console.log(fruitsW3.at(-2))
+
+console.log(fruitsW3.join("-")) // Banana-Orange-Apple-Mango
+
+console.log(fruitsW3.concat(vegetables))
+// Note
+// The concat() method does not change the existing arrays.
+// It always returns a new array.
+// The concat() method can take any number of array arguments.
+
+console.log(fruitsW3)
+
+
+const myArr = [[1,2],[3,4],[5,6]];
+const newArr = myArr.flat();
+console.log(newArr)
+
+newArr.flatMap((value)=>{
+    console.log(value*10)
+})
+
+myArr.map((value)=>{
+    console.log(value*100)
+})
+
+
+const car1 = {
+    brand: "BMW",
+    model: "X5",
+    color: "black",
+    price: 100000
+}
+
+// for (let key in car1){
+//     console.log("key is", key, "value is", car1[key])
+// } never use this way, because of prototype chain
+
+const keyValues = Object.entries(car1)
+console.log("key values are:",keyValues)
+
+for (let i = 0; i<keyValues.length; i++){
+    console.log("keys are:",keyValues[i][0], "values are:",keyValues[i][1])
+}
+
+
+// for (let i of car1){
+//     console.log("checking",i) wont work
+// }
+
+for (let i of keyValues){
+    console.log('values are',i)
+}
+
+const car2 = {
+    brand: "Audi",
+    model: "A4",
+    color: "white",
+    price: 80000
+}
+
+const car3 = {
+    brand: "Mercedes",
+    model: "C-Class",
+    color: "red",
+    price: 120000
+}
+
+const car4 = {
+    brand: "Mercedes",
+    model: "C-Class",
+    color: "red",
+    price: 120000
+}
+
+keyValuePair = Object.entries(car4)
+
+for (let values of keyValuePair){
+    console.log("car4 data is:",values)
+}
+
+// 183 - 187 is the preferred way to access object values
+
+
+
+//----
+// array of objects
+const cars = [car1, car2, car3]
+console.log(cars)
+
+// array inside object
+
+const avy = {
+    location: "goa",
+    profession: "doctor",
+    hobbies: ["poetry", "reading"], // array inside object
+    marks:{
+        "english": 30,
+        "math": 50
+    }
+}
+
