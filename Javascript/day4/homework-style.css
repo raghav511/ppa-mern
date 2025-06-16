@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#nav-belt {
+    background-color: #131921;
+    padding:1rem;
+}
+
+
+
+#menu{
+    color: white;
+    cursor: pointer;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 2rem;
+
+}
+
+#grid{
+    background-color: skyblue;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.recipe-card{
+    border: 3px solid darkblue;
+    margin:0.5rem;
+    align-items: center;
+    background-color: lightgoldenrodyellow;
+}
+
+.recipe-image{
+    width: 200px;
+    height: 200px;
+}
+
+.recipe-name{
+    font-size: 1rem;
+}
