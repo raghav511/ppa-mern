@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Forms</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
+            gap: 2rem;
+            border: 1px solid orange;
+        }
+    </style>
+</head>
+
+<body>
+    <h3 id="greetings">Hello !</h3>
+    <form onSubmit="handleSubmit(event)">
+        <div>
+            <label>Email</label>
+            <input type="email" name="email">
+        </div>
+        <div>
+            <label>Password</label>
+            <input type="password" name="userPassword">
+        </div>
+        <div>
+            <label>Name</label>
+            <input type="text" name="username" onkeyup="handleUsername(event)">
+        </div>
+        <div>
+            <label>College</label>
+            <input type="college" name="college">
+        </div>
+        <button>Register</button>
+        <button>Clear</button>
+    </form>
+    <script src="./app.js"></script>
+</body>
+
+</html>
