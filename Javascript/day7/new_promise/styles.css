@@ -1,0 +1,21 @@
+body {
+    padding: 2rem;
+}
+
+.card {
+    padding: 2rem;
+    margin: 2rem;
+    background-color: yellow;
+    border-radius: 1rem;
+    position: relative;
+}
+
+#btn-x {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
