@@ -17,6 +17,38 @@
 
 // getTrendingVideos();
 
+const getSuggestionAPI = (searchText) => {
+    console.log("API called", searchText);
+    // const request = fetch(`https://youtube138.p.rapidapi.com/auto-complete/?q=${searchText}&hl=en&gl=US`, {
+    //     method: "GET",
+    //     headers: {
+    //         "x-rapidapi-host": "youtube138.p.rapidapi.com",
+    //         "x-rapidapi-key": "1a1ab9338bmsh4bfff8e240b3a37p16e373jsn99f4b6020162",
+    //     },
+    // });
+
+    // request
+    //     .then((response) => {
+    //         const pr2 = response.json();
+    //         pr2.then((data) => {
+    //             renderSuggestionsList(data);
+    //         });
+    //     })
+    //     .catch((err) => {
+    //         alert("Sugesstions Error:", err.message);
+    //     });
+};
+
+let id = null;
+
+const getSmartSuggestionAPI = (txt) => {
+    clearTimeout(id);
+
+    id = setTimeout(() => {
+        getSuggestionAPI(txt);
+    }, 600);
+};
+
 const data = {
     status: "success",
     list: [
@@ -9036,9 +9068,10 @@ const data = {
         },
     ],
 };
-console.log("🟡 : data:", data);
 
 const rootElem = document.getElementById("root");
+const searchSuggestionsContainerElement = document.getElementById("search-suggestions-container");
+const searchInputElem = document.getElementById("search-text-input");
 
 const showTrendingVideos = () => {
     const { list } = data;
@@ -9073,3 +9106,31 @@ const showTrendingVideos = () => {
 };
 
 showTrendingVideos();
+
+const handleAutoSuggest = (e) => {
+    const searchText = e.target.value;
+
+    getSmartSuggestionAPI(searchText);
+};
+
+const renderSuggestionsList = (obj) => {
+    searchSuggestionsContainerElement.innerHTML = "";
+
+    const { query, results } = obj;
+    results.slice(0, 10).forEach((result) => {
+        const newText = document.createElement("p");
+        newText.innerHTML = `<b>${result.substring(0, query.length)}</b>${result.substring(query.length)}`;
+        newText.addEventListener("click", (e) => {
+            // console.log("click", e.target.innerText);
+            searchInputElem.value = e.target.innerText;
+            searchSuggestionsContainerElement.innerHTML = "";
+        });
+
+        searchSuggestionsContainerElement.appendChild(newText);
+    });
+};
+
+const handleSearch = () => {
+    const val = searchInputElem.value;
+    window.open(`./search-page.html?searchText=${val}`, "_self");
+};
