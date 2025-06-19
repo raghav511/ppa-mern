@@ -9,8 +9,8 @@ const getSearchResults = () => {
     const request = fetch(`https://youtube138.p.rapidapi.com/search/?q=${encodedSearchText}&hl=en&gl=US`, {
         method: "GET",
         headers: {
-            "x-rapidapi-host": "youtube138.p.rapidapi.com",
-            "x-rapidapi-key": "1a1ab9338bmsh4bfff8e240b3a37p16e373jsn99f4b6020162",
+            "x-rapidapi-host": "youtube138.p.rapidapi.comLIKH",
+            "x-rapidapi-key": "1a1ab9338bmsh4bfff8e240b3a37p16e373jsn99f4b6020162LIKH",
         },
     });
 
