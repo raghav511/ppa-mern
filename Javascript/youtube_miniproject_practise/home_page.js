@@ -8565,6 +8565,7 @@ const trendingVideos = ()=>{
     const {list} = data
     list.forEach((video)=>{
         const {title, author, publishedText, viewCount, authorThumbnails, videoThumbnails, videoId} = video;
+<<<<<<< HEAD
         // video
         const videoContainer = document.createElement("div");
         videoContainer.className='videoContainerClass'
@@ -8620,11 +8621,44 @@ const trendingVideos = ()=>{
         
 
         videoContainer.appendChild(additional_info);
+=======
+        const videoContainer = document.createElement("div");
+
+        const titleElement = document.createElement("p");
+        titleElement.innerText=title;
+
+        const authorElement = document.createElement("p");
+        authorElement.innerText=author;
+
+        const publishedTextElement = document.createElement("p");
+        publishedTextElement.innerText=publishedText;
+
+        const viewCountElement = document.createElement("p");
+        viewCountElement.innerText=viewCount;
+
+        const authorThumbnailElement = document.createElement("img");
+        authorThumbnailElement.src=authorThumbnails[1].url;
+
+        const videoThumbnailElement = document.createElement("img");
+        videoThumbnailElement.src=videoThumbnails[0].url;
+        // videoThumbnailElement.src=videoId;
+
+        videoContainer.appendChild(authorThumbnailElement);
+        videoContainer.appendChild(titleElement);
+        videoContainer.appendChild(authorElement)
+        videoContainer.appendChild(publishedTextElement);
+        videoContainer.appendChild(viewCountElement);
+        videoContainer.appendChild(videoThumbnailElement);
+>>>>>>> 357f9c9 (youtube mini project practise)
 
         rootElement.appendChild(videoContainer);
     });
 }
 trendingVideos();
 
+<<<<<<< HEAD
 // title = trendingVideos()
+=======
+title = trendingVideos()
+>>>>>>> 357f9c9 (youtube mini project practise)
 // console.log("trending videos are ",trendingVideos)
