@@ -36,40 +36,40 @@ const domRoot = document.getElementById("root");
 const ReactRoot = ReactDOM.createRoot(domRoot);
 
 const item1 = {
-    $$typeof: Symbol.for("react.element"),
-    type: "li",
-    key: null,
-    ref: null,
-    props: {
-        children: "Item - 1",
-    },
-    _owner: null,
-    _store: {},
+  $$typeof: Symbol.for("react.element"),
+  type: "li",
+  key: null,
+  ref: null,
+  props: {
+    children: "Item - 1",
+  },
+  _owner: null,
+  _store: {},
 };
 
 const item2 = {
-    $$typeof: Symbol.for("react.element"),
-    type: "li",
-    key: null,
-    ref: null,
-    props: {
-        className: "fancy-text",
-        children: "Item - 2",
-    },
-    _owner: null,
-    _store: {},
+  $$typeof: Symbol.for("react.element"),
+  type: "li",
+  key: null,
+  ref: null,
+  props: {
+    className: "fancy-text",
+    children: "Item - 2",
+  },
+  _owner: null,
+  _store: {},
 };
 
 const list = {
-    $$typeof: Symbol.for("react.element"),
-    type: "ul",
-    key: null,
-    ref: null,
-    props: {
-        children: [item1, item2],
-    },
-    _owner: null,
-    _store: {},
+  $$typeof: Symbol.for("react.element"),
+  type: "ul",
+  key: null,
+  ref: null,
+  props: {
+    children: [item1, item2],
+  },
+  _owner: null,
+  _store: {},
 };
 
 ReactRoot.render(list);
