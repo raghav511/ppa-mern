@@ -8565,38 +8565,66 @@ const trendingVideos = ()=>{
     const {list} = data
     list.forEach((video)=>{
         const {title, author, publishedText, viewCount, authorThumbnails, videoThumbnails, videoId} = video;
+        // video
         const videoContainer = document.createElement("div");
+        videoContainer.className='videoContainerClass'
 
-        const titleElement = document.createElement("p");
-        titleElement.innerText=title;
+        const videoThumbnail = document.createElement("div");
+        videoThumbnail.className = "videoThumbnailClass";
 
-        const authorElement = document.createElement("p");
-        authorElement.innerText=author;
+        const videoThumbnailSrc = document.createElement("img");
+        videoThumbnailSrc.src=videoThumbnails[0].url;
 
-        const publishedTextElement = document.createElement("p");
-        publishedTextElement.innerText=publishedText;
+        videoThumbnail.appendChild(videoThumbnailSrc);
+        videoContainer.appendChild(videoThumbnail);
 
-        const viewCountElement = document.createElement("p");
-        viewCountElement.innerText=viewCount;
+        // author and info
+        
 
-        const authorThumbnailElement = document.createElement("img");
-        authorThumbnailElement.src=authorThumbnails[1].url;
+        const additional_info = document.createElement("div");
+        additional_info.className='infoClass';
 
-        const videoThumbnailElement = document.createElement("img");
-        videoThumbnailElement.src=videoThumbnails[0].url;
-        // videoThumbnailElement.src=videoId;
 
-        videoContainer.appendChild(authorThumbnailElement);
-        videoContainer.appendChild(titleElement);
-        videoContainer.appendChild(authorElement)
-        videoContainer.appendChild(publishedTextElement);
-        videoContainer.appendChild(viewCountElement);
-        videoContainer.appendChild(videoThumbnailElement);
+        const authorThumbnail = document.createElement("div");
+        authorThumbnail.className='authorThumbnailClass';
+        authorThumbnailSrc = document.createElement("img");
+        authorThumbnailSrc.src=authorThumbnails[1].url;
+        authorThumbnail.appendChild(authorThumbnailSrc);
+        additional_info.appendChild(authorThumbnail);
+
+        const textInfo = document.createElement("div");
+        const videoTitle = document.createElement("p");
+        videoTitle.innerText=title;
+        textInfo.appendChild(videoTitle);
+
+
+        const videoDetails = document.createElement("div");
+        videoDetails.className='videoDetailsClass';
+
+        const videoAuthor = document.createElement("p");
+        videoAuthor.innerText=author;
+        videoDetails.appendChild(videoAuthor);
+
+        const videoPublishedText = document.createElement("p");
+        videoPublishedText.innerText=publishedText;
+        videoDetails.appendChild(videoPublishedText);
+
+        const videoViewCount = document.createElement("p");
+        videoViewCount.innerText=viewCount;
+        videoDetails.appendChild(videoViewCount);
+
+        additional_info.appendChild(textInfo);
+        additional_info.appendChild(authorThumbnail);
+        additional_info.appendChild(videoDetails);
+
+        
+
+        videoContainer.appendChild(additional_info);
 
         rootElement.appendChild(videoContainer);
     });
 }
 trendingVideos();
 
-title = trendingVideos()
+// title = trendingVideos()
 // console.log("trending videos are ",trendingVideos)
