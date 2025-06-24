@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 1rem 2rem;
+    background-color: lightseagreen;
+    display: flex;
+    gap: 3rem;
+}
+
+header a {
+    color: white;
+    font-weight: 600;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+footer {
+    padding: 1rem 2rem;
+    background-color: lightslategrey;
+    display: flex;
+    gap: 3rem;
+}
+
+main {
+    padding: 3rem 2rem;
+    background-color: lightsteelblue;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.card {
+    padding: 1.5rem;
+    border: 1px solid lightsalmon;
+    border-radius: 1.5rem;
+
+    background-color: antiquewhite;
+}
