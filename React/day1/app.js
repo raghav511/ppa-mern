@@ -11,6 +11,7 @@
 // newListContainer.appendChild(item1);
 // newListContainer.appendChild(item2);
 
+// the above is using plain javascript
 /* -----------------------------------------------
 
 <ul>
