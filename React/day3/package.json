@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+<<<<<<< HEAD
     "dev": "parcel index.html",
     "build": "parcel build index.html"
+=======
+    "test": "echo \"Error: no test specified\" && exit 1"
+>>>>>>> f6d466f (React App - Parcel (from Scratch))
   },
   "author": "",
   "license": "ISC",
