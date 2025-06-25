@@ -2,14 +2,20 @@ import React from "react"; // if its user defined, is it internal nodejs, node_m
 import ReactDOM from "react-dom/client";
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> abbd662 (react Components import _ export, css)
 import "./main.css";
 
 import Header from "./components/Header"; // default import
 import Footer from "./components/Footer"; // default import
 import { Button, Main } from "./components/Main"; // named import
 
+<<<<<<< HEAD
 =======
 >>>>>>> f6d466f (React App - Parcel (from Scratch))
+=======
+>>>>>>> abbd662 (react Components import _ export, css)
 const domRoot = document.getElementById("root");
 const reactRoot = ReactDOM.createRoot(domRoot);
 
@@ -18,13 +24,19 @@ const App = () => {
     return (
         <div>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> abbd662 (react Components import _ export, css)
             <Header />
             <Main />
             <Footer />
             <Button />
+<<<<<<< HEAD
 =======
             <h1>Hello from React App!!</h1>
 >>>>>>> f6d466f (React App - Parcel (from Scratch))
+=======
+>>>>>>> abbd662 (react Components import _ export, css)
         </div>
     );
 };
