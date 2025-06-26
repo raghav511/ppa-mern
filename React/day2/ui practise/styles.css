@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* .card{
+    padding: 1rem;
+    margin:1rem;
+    background-color: aqua;
+    border: 2px solid black;
+    border-radius: 2rem;
+} */
+
+header{
+    padding: 1rem 2rem;
+    background-color: snow;
+    display:flex;
+    gap:3rem;
+}
+
+header a{
+    color: darkgreen;
+    font-size: medium;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+
+footer{
+    padding: 1rem 2rem;
+    background-color: lightcoral;
+    display:flex;
+    gap:3rem;
+}
+
+main{
+    padding: 3rem 2rem;
+    background-color: lightcoral;
+    display:flex;
+    flex-wrap: wrap;
+    gap:3rem;
+}
+
+.root-container{
+    background-color: beige;
+}
+
+.card{
+    padding: 1.5rem;
+    margin:1rem;
+    background-color: aqua;
+    border: 2px solid black;
+    border-radius: 2rem;
+}
