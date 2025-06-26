@@ -7,6 +7,7 @@ const successCallbackFn = (data) => {
 const failureCallbackFn = (err) => {
     console.log("Data download failed.",err)
 }
+
 const recipes_promise = fetch(input="https://dummyjson.collm/recipes")
 
 console.log(recipes_promise);
