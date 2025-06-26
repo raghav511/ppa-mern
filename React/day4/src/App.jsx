@@ -20,6 +20,8 @@ import { useState } from "react";
 const MainApp = () => {
     const [counter, setCounter] = useState(0); // 0
 
+    // your remote can take either "direct value" OR give it a "callback"
+
     // const handleIncrement = () => {
     //     setCounter(counter + 1); // please change the value to 1 --> Noted!
     //     setCounter(counter + 1); // please change the value to 1 --> Noted!
