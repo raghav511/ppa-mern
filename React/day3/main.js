@@ -22,4 +22,5 @@ const App = () => {
   );
 };
 
-reactRoot.render(App());
+// reactRoot.render(App());
+reactRoot.render(<App />);
