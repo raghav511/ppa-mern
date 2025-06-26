@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState } from "react";
 
 const MainApp = () => {
@@ -19,14 +20,32 @@ const MainApp = () => {
         setCounter((prev) => {
             return prev + 1;
         }); // please change the value to old-value + 1 --> Noted!
+=======
+const MainApp = () => {
+    let searchText = "Hello";
+
+    const handleSearch = (e) => {
+        const val = e.target.value;
+        searchText = val;
+        console.log(searchText);
+>>>>>>> a0b415b (vite react app - import,export - starting to understand states / data of the component)
     };
 
     return (
         <div>
+<<<<<<< HEAD
             <h1>{counter}</h1>
             <button onClick={handleIncrement}>++</button>
+=======
+            <input type="text" onKeyUp={handleSearch} />
+            <h2>{searchText}</h2>
+>>>>>>> a0b415b (vite react app - import,export - starting to understand states / data of the component)
         </div>
     );
 };
 
+<<<<<<< HEAD
 export default MainApp;
+=======
+export default MainApp; //default
+>>>>>>> a0b415b (vite react app - import,export - starting to understand states / data of the component)

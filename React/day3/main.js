@@ -42,8 +42,13 @@ const App = () => {
 };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // reactRoot.render(App());
 reactRoot.render(<App />);
 =======
 reactRoot.render(App());
 >>>>>>> f6d466f (React App - Parcel (from Scratch))
+=======
+// reactRoot.render(App());
+reactRoot.render(<App />);
+>>>>>>> a0b415b (vite react app - import,export - starting to understand states / data of the component)
