@@ -8566,6 +8566,7 @@ const trendingVideos = ()=>{
     list.forEach((video)=>{
         const {title, author, publishedText, viewCount, authorThumbnails, videoThumbnails, videoId} = video;
 <<<<<<< HEAD
+<<<<<<< HEAD
         // video
         const videoContainer = document.createElement("div");
         videoContainer.className='videoContainerClass'
@@ -8622,6 +8623,8 @@ const trendingVideos = ()=>{
 
         videoContainer.appendChild(additional_info);
 =======
+=======
+>>>>>>> 64a84bf (youtube mini project practise)
         const videoContainer = document.createElement("div");
 
         const titleElement = document.createElement("p");
@@ -8649,7 +8652,10 @@ const trendingVideos = ()=>{
         videoContainer.appendChild(publishedTextElement);
         videoContainer.appendChild(viewCountElement);
         videoContainer.appendChild(videoThumbnailElement);
+<<<<<<< HEAD
 >>>>>>> 357f9c9 (youtube mini project practise)
+=======
+>>>>>>> 64a84bf (youtube mini project practise)
 
         rootElement.appendChild(videoContainer);
     });
@@ -8657,8 +8663,12 @@ const trendingVideos = ()=>{
 trendingVideos();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // title = trendingVideos()
 =======
 title = trendingVideos()
 >>>>>>> 357f9c9 (youtube mini project practise)
+=======
+title = trendingVideos()
+>>>>>>> 64a84bf (youtube mini project practise)
 // console.log("trending videos are ",trendingVideos)

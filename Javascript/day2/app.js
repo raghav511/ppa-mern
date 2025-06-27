@@ -11,15 +11,15 @@
 // console.log(document);
 
 let callback1 = function () {
-    console.info("---- timeout -----");
-    console.info("--->", "Likhilesh");
-    console.info("---------");
+  console.info("---- timeout -----");
+  console.info("--->", "Likhilesh");
+  console.info("---------");
 };
 
 let callback2 = function () {
-    console.info("---- interval -----");
-    console.info("--->", "Himanshu");
-    console.info("---------");
+  console.info("---- interval -----");
+  console.info("--->", "Himanshu");
+  console.info("---------");
 };
 
 const timeInMilliseconds = 5000;

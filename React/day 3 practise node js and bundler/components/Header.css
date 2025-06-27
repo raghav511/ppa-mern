@@ -1,0 +1,19 @@
+/* header {
+    background-color: thistle;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+} */
+
+header{
+    background-color: aqua;
+    padding:2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+header a {
+    color: crimson;
+    font-size: 1.5rem;
+}
