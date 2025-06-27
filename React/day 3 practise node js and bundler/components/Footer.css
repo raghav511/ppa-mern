@@ -1,0 +1,12 @@
+footer {
+    background-color: bisque;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer a {
+    color: rgb(25, 25, 226);
+    font-size: 1.5rem;
+}
