@@ -1,16 +1,15 @@
 import {useState} from "react";
 const App=()=>{
-  const welcomeText = "Hello User! Please enter your name"
+  // const welcomeText = "Hello User! Please enter your name"
+  const welcomeText = ""
   const [userName, setUserName]=useState(welcomeText);
 
   const CaptureName=(e)=>{
-    console.log(e.target.value);
-    
-    
-    const val = e.target.value;
-
-    setUserName(`${val}`);
+    // console.log(e.target.value);
+    // setUserName(e.target.value);
+    setUserName(e.target.value);
   }
+  
   const ClearName=()=>{
     return setUserName(welcomeText);
   }
@@ -21,7 +20,7 @@ const App=()=>{
       <h2>
         {userName}
       </h2>
-        <input type="text" name="userName" onKeyUp={CaptureName}/>
+        <input type="text" name="userName" value={userName} onChange={CaptureName}/>
       </div>
     )
   }
