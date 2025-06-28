@@ -18,7 +18,7 @@ const App=()=>{
     return (
       <div>
       <h2>
-        {userName}
+        Hello {userName}
       </h2>
         <input type="text" name="userName" value={userName} onChange={CaptureName}/>
       </div>
