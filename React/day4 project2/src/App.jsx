@@ -6,9 +6,10 @@ const App=()=>{
   const CaptureName=(e)=>{
     console.log(e.target.value);
     
+    
     const val = e.target.value;
 
-    setUserName(`Hello ${val}`);
+    setUserName(`${val}`);
   }
   const ClearName=()=>{
     return setUserName(welcomeText);
