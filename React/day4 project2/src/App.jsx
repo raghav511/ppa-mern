@@ -1,26 +1,35 @@
 import {useState} from "react";
 const App=()=>{
+  const welcomeText = "Hello User! Please enter your name"
+  const [userName, setUserName]=useState(welcomeText);
 
-  const [userName, setUserName]=useState("Dear");
+  const CaptureName=(e)=>{
+    // while(e.target.value!=
+    console.log(e.target.value);
+    const val = e.target.value;
 
-  const welcomeMessage = `Hello ${userName}! Please enter your name`;
+    setUserName(`Hello ${val}`);
+  }
+  const WelcomeMessage = ()=>{
+    return (
+      <div>
+      <h2>
+        {/* Hello {userName}! Please enter your name */}
+        {userName}
+      </h2>
+        <input type="text" name="userName" onKeyUp={CaptureName}/>
+      </div>
+    )
+  };
 
   const ClearName=()=>{
-    return setUserName(" ");
+    return setUserName(welcomeText);
   }
 
-  const addName=(e)=>{
-    console.log(e.value);
-  }
-  
-  const AddNameEvent=()=>{
-    document.addEventListener('keyup',addName);
-  }
   const Greeetings=()=>{
     return (
       <div>
-      {welcomeMessage}
-      <AddNameEvent/>
+      <WelcomeMessage/>
       </div>
     )
   }
