@@ -9,39 +9,26 @@ import { useState } from 'react';
 function App() {
   // const studentName, setStudentName = useState("");
 
-  const AddName=()=>{
+  const NameCityInput=()=>{
     return(
     <div>
-        <label for="studentName">Student Name</label>
+        <label htmlFor="studentName">Student Name</label>
         <input type="text" name="studentName" id="studentName"/>
-      </div>
-    )
-  }
-  const AddCity=()=>{
-    return(
-    <div>
-      <label>City</label>
-      <input name="city"/>
-    </div>
-    )
-  }
-  const WelcomeStudent=()=>{
-    console.log({})
-
-  }
-  const Submit=()=>{
-    return(
-      <div>
-        <button onClick={WelcomePage}>Submit</button>
+        <br/>
+        <br/>
+        <label htmlFor='studentCity'>Student City</label>
+        <input type="text" name="studentCity" id="studentCity"/>
+        <br/>
+        <br/>
+        {/* <button onClick={}>Submit</button> */}
       </div>
     )
   }
 
   return (
     <div>
-      <AddName/>
-      <AddCity/>
-      <Submit/>
+      <NameCityInput/>
+      {/* <Submit/> */}
     </div>
   )
 }
