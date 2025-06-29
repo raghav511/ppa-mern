@@ -4,5 +4,5 @@ import react from "@vitejs/plugin-react";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/ppa-mern/calculator",
+  base: "/ppa-mern/React/day4%20project4",
 });
