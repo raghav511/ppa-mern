@@ -1,11 +1,15 @@
+// issue:
+// 1. clicking on just + is adding the same number again
+// 2. clicking on double digits is only picking the last number
 import { useState } from "react";
+import "./App.css";
 function App() {
   const [showResult, setResult] = useState(0);
   const [showNum, setNum] = useState(0);
 
   const Add = () => {
     setResult(() => {
-      return showNum + showResult;
+      return showResult + showNum;
     });
   };
 
@@ -25,8 +29,8 @@ function App() {
 
   return (
     <div>
-      <h2>Welcome Avy</h2>
-      <h2>{showResult}</h2>
+      <h2>Calculator</h2>
+      <h2 id="result">{showResult}</h2>
       <div>
         <span>
           <button
