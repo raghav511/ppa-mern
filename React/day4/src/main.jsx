@@ -7,19 +7,7 @@ const domRoot = document.getElementById("root");
 const reactRoot = createRoot(domRoot);
 
 reactRoot.render(
-<<<<<<< HEAD
-<<<<<<< HEAD
-    // <StrictMode>
-    <App />
-    // </StrictMode>
-=======
-    <StrictMode>
-        <App />
-    </StrictMode>
->>>>>>> a0b415b (vite react app - import,export - starting to understand states / data of the component)
-=======
-    // <StrictMode>
-    <App />
-    // </StrictMode>
->>>>>>> 304137d (USE-STATE in depth - 1)
+  // <StrictMode>
+  <App />
+  // </StrictMode>
 );
