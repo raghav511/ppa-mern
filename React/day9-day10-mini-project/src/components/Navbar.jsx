@@ -15,9 +15,13 @@ const Navbar = () => {
 
     return (
         <nav className="flex px-6 py-4 justify-between items-center bg-black text-white">
+<<<<<<< HEAD
             <Link to="/" className="py-1 px-2 bg-purple-800 text-white rounded-md w-fit">
                 My App
             </Link>
+=======
+            <Link to="/">Shopping App</Link>
+>>>>>>> 3d945ce (app name is now changed as per trademark issues)
             <div>
                 <input
                     className="px-2 py-1 border-1 border-amber-800 rounded-lg mr-2"
